@@ -13,10 +13,11 @@ $(document).ready(() => {
    *  always return text anyways
    */
   // initialize example tooltip for copying
-  const exampleToolTip = $("#copy-tooltip").hide();
   const exampleTestText = $(".example-test");
+  const exampleToolTip = $("#copy-tooltip");
   exampleTestText.on("click", () => {
     copyResult(exampleTestText.text());
+    exampleToolTip.removeClass("tooltip-hide");
     exampleToolTip.fadeIn();
     setTimeout(function () {
       exampleToolTip.fadeOut();
