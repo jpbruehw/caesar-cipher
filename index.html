@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.d05b6d2a.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.5b882f0b.css" />
+    <link rel="stylesheet" href="./index.68a713a2.css" />
+    <title>Caesar Cipher</title>
+  </head>
+  <body>
+    <div class="cipher-container">
+      <img
+        src="./caesar-cipher-header.66e3a66f.svg"
+        alt="caesar cipher header"
+        class="caesar-header"
+      />
+      <div class="cipher-description-container">
+        <article>
+          <p>
+            The Caesar cipher is an encryption technique that was used by Julius
+            Caesar to send secret messages to his allies. It works by shifting
+            the letters in the plaintext message by a certain number of
+            positions, known as the “shift” or “key”. Try decrypting:
+            <span class="example-test">qnspjins.htr/ns/ougwzjmbnqjw</span> with
+            a shift of 5 😉.
+          </p>
+          <div id="copy-tooltip">copied!</div>
+          <p></p>
+          <h4 id="cipher-list-header">Here is how it works:</h4>
+          <ol>
+            <li>Choose some text you want to encrypt</li>
+            <li>Choose a shift value between 1-25</li>
+            <li>Choose output as plain text or encoded numbers</li>
+            <li>Enter output and shift value to decrypt later</li>
+          </ol>
+        </article>
+      </div>
+      <div class="form-output-container">
+        <form id="cipher-form" onsubmit="confettiBoom()">
+          <div class="label-input-div">
+            <label for="text-input">Enter Text to Encrypt/Decrypt</label>
+            <input
+              type="text"
+              id="text-input"
+              name="text-input"
+              required
+              class="form-input"
+            />
+          </div>
+          <div class="label-input-div">
+            <label for="shift">Enter Shift</label>
+            <input
+              type="number"
+              id="shift"
+              name="shift"
+              required
+              placeholder="1-25"
+              class="form-input"
+            />
+          </div>
+          <div class="label-input-div">
+            <label for="encrypt-select">Encrypt or Decrypt</label>
+            <select
+              name="encrypt-select"
+              id="encrypt-select"
+              class="form-input"
+            >
+              <option value="decrypt">decrypt</option>
+              <option value="encrypt">encrypt</option>
+            </select>
+          </div>
+          <div class="output-container">
+            <div id="output-type-section">
+              <div class="label-input-div">
+                <label for="output-type">Output Type</label>
+                <select name="output-type" id="output-type" class="form-input">
+                  <option value="text">text</option>
+                  <option value="numbers">numbers</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="label-input-div">
+            <button id="submit-button" type="submit">submit</button>
+          </div>
+        </form>
+        <div class="result-container"><p class="result-text"></p></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module" src="./index.dc49c8f2.js"></script>
+  </body>
+</html>
