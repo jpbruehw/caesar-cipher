@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./favicon.d05b6d2a.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./index.679f08c2.css" />
-    <link rel="stylesheet" href="./index.68a713a2.css" />
+    <link rel="icon" href="./assets/favicon-qbVvQ-tY.ico" type="image/x-icon" />
     <title>Caesar Cipher</title>
+    <script type="module" crossorigin src="./assets/index-Hxrn4yWz.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BnJMQvmR.css">
   </head>
   <body>
     <div class="cipher-container">
       <img
-        src="./caesar-cipher-header.66e3a66f.svg"
+        src="./assets/caesar-cipher-header-hQdlAl-7.svg"
         alt="caesar cipher header"
         class="caesar-header"
       />
@@ -22,10 +22,11 @@
             Caesar to send secret messages to his allies. It works by shifting
             the letters in the plaintext message by a certain number of
             positions, known as the “shift” or “key”. Try decrypting:
-            <span class="example-test">qnspjins.htr/ns/ougwzjmbnqjw</span> with
-            a shift of 5 😉.
+            <span class="example-test">qnspjins.htr/ns/ougwzjmbnqjw</span>
+            with a shift of 5 😉.
           </p>
           <div id="copy-tooltip" class="tooltip-hide">copied!</div>
+
           <h4 id="cipher-list-header">Here is how it works:</h4>
           <ol>
             <li>Choose some text you want to encrypt</li>
@@ -84,16 +85,27 @@
             <button id="submit-button" type="submit">submit</button>
           </div>
         </form>
-        <div class="result-container"><p class="result-text"></p></div>
+        <div class="result-container">
+          <p class="result-text"></p>
+        </div>
       </div>
     </div>
+    <!-- script tags -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin
+      crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-    <script></script>
-    <script type="module" src="./index.b51d6287.js"></script>
+    <script>
+      // define your confetti function here
+      function confettiBoom() {
+        const jsConfetti = new JSConfetti();
+        jsConfetti.addConfetti({
+          emojis: ["🇮🇹", "🧐", "🕊️", "🤩"],
+          confettiNumber: 80,
+        });
+      }
+    </script>
   </body>
 </html>
