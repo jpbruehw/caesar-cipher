@@ -10,20 +10,20 @@ A Caesar cipher is a simple method of encoding messages. Caesar ciphers use a su
 To use the Caesar Cipher program, follow these steps:
 
 1. Clone the repository to your local machine:
-   <code>
+   ```
    git clone https://github.com/jpbruehw/caesar-cipher.git
-   </code>
+   ```
 2. Navigate to the project directory:
-   <code>
+   ```
    cd caesar-cipher
-   </code>
+   ```
 3. Install dependencies:
-   <code>
+   ```
    npm install
-   </code>
+   ```
 4. Run the program:
-   <code>
+   ```
    npm run dev
-   </code>
+   ```
 
 Feel free to customize it further based on your project's specific features and requirements!
